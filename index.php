@@ -1,43 +1,37 @@
-<?php 
+<html>
+	<head>
+		<title>Home</title>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<style>
+			.btn {
+				text-decoration: none;
+				color: white;
+			}
 
-// require "src/BangunDatar/BangunDatar.php";
-// require "src/BangunDatar/Persegi.php";
-// require "src/BangunDatar/PersegiPanjang.php";
-// require "src/BangunDatar/Lingkaran.php";
-// require "src/BangunDatar/BelahKetupat.php";
-// require "src/BangunDatar/Segitiga.php";
+			.btn:hover {
+				color: red;
+			}
 
-require "vendor/autoload.php";
+			.btn-success:hover {
+				background-color: yellow;
+				border-color: yellow ; 
+			}
+		</style>
+	</head>
+<body>
+	<div class="container">
+		<center style="padding: 70px;"><img src="img/bangundatar.png" alt="bangundatar"></center>
+		<h3 align="center" style="padding: 20px;"><b>Menghitung Luas & Keliling BangunDatar</b></h3>
+			<div class="btn-group" style="margin-left: 220px;">
+				<button class="btn btn-success" style="margin-right:10px"><a href="Persegi.php" class="btn">Persegi</a></button>
+				<button class="btn btn-success" style="margin-right:10px"><a href="PersegiPanjang.php" class="btn">Persegi Panjang</a></button>
+				<button class="btn btn-success" style="margin-right:10px"><a href="Lingkaran.php" class="btn">Lingkaran</a></button>
+				<button class="btn btn-success" style="margin-right:10px"><a href="BelahKetupat.php" class="btn">Belah Ketupat</a></button>
+				<button class="btn btn-success" style="margin-right:10px"><a href="Segitiga.php" class="btn">Segitiga</a></button>
+			</div>
+			<br><br>
+	</div>
+	
+</body>
 
-use Tugas\Tugas;
-use Tugas\BangunDatar\BangunDatar;
-use Tugas\BangunDatar\Persegi;
-use Tugas\BangunDatar\PersegiPanjang;
-use Tugas\BangunDatar\Lingkaran;
-use Tugas\BangunDatar\BelahKetupat;
-use Tugas\BangunDatar\Segitiga;
-
-$persegi = new  Persegi(5);
-echo 'Luas Persegi = ' . $persegi->hitungLuas() . "<br>";
-echo 'Keliling Persegi = ' . $persegi->hitungKeliling() . "<br> <br>";
-
-$persegiPanjang = new PersegiPanjang(6,4);
-echo ' Luas PersegiPanjang = ' . $persegiPanjang->hitungLuas() . "<br>";
-echo ' Keliling PersegiPanjang =  ' . $persegiPanjang->hitungKeliling() . "<br> <br>";
-
-$lingkaran = new Lingkaran(7);
-echo ' Luas Lingkaran = ' . $lingkaran->hitungLuas() . "<br>"; 
-echo ' Keliling Lingkaran = ' . $lingkaran->hitungKeliling() . "<br> <br>";
-
-$belahKetupat = new BelahKetupat(6,7);
-echo ' Luas Belah Ketupat = ' . $belahKetupat->hitungLuas() . "<br>";
-$belahKetupat->setSisi(6);
-echo ' Keliling BelahKetupat = ' . $belahKetupat->hitungKeliling() . "<br> <br>";
-
-$segitiga = new Segitiga(4,5,6);
-$segitiga->setAlas(5);
-$segitiga->setTinggi(4);
-echo ' Luas Segitiga = ' . $segitiga->hitungLuas() . "<br>";
-echo ' Keliling Segitiga = ' . $segitiga->hitungKeliling() . "<br> <br>";
-
-echo "<hr>";
+</html>

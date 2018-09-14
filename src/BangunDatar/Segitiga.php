@@ -10,21 +10,25 @@ class Segitiga extends BangunDatar
 			$sisiB,
 			$sisiC;
 
-	public function __construct( $sisiA , $sisiB, $sisiC )
-	{
-		$this->sisiA = $sisiA;
-		$this->sisiB = $sisiB;
-		$this->sisiC = $sisiC;
-	}
-
-	public function setAlas( $alas )
+	public function __construct( $alas, $tinggi )
 	{
 		$this->alas = $alas;
+		$this->tinggi = $tinggi;
 	}
 
-	public function setTinggi( $tinggi )
+	public function setSisiA( $sisiA )
 	{
-		$this->tinggi = $tinggi;
+		$this->sisiA = $sisiA;
+	}
+
+	public function setSisiB( $sisiB )
+	{
+		$this->sisiB = $sisiB;
+	}
+
+	public function setSisiC( $sisiC )
+	{
+		$this->sisiC = $sisiC;
 	}
 
 

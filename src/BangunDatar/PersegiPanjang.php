@@ -4,8 +4,8 @@ namespace Tugas\BangunDatar;
 // hitung persegi panjang
 class PersegiPanjang extends BangunDatar
 {
-	protected $panjang,
-			  $lebar;
+	public $panjang,
+		   $lebar;
 
 	public function __construct( $panjang, $lebar ) 
 	{

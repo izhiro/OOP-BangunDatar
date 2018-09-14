@@ -4,7 +4,7 @@ namespace Tugas\BangunDatar;
 // hitung luas & keliling Persegi
 class Persegi extends BangunDatar
 {
-	protected $sisi = 4;
+	protected $sisi;
 
 	public function __construct( $sisi )
 	{
