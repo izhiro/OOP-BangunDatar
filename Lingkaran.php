@@ -37,8 +37,8 @@ $keliling_lingkaran = ob_get_clean();
             }
 
             .btn-danger {
-                width: 107px;
-                height: 50px;
+                width: 110px;
+                height: 60px;
             }
 
             .btn-danger:hover {
